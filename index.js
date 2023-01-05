@@ -5,6 +5,7 @@ const { Server } = require("socket.io");
 const mongoose = require("mongoose");
 
 process.env.TZ = 'UTC'; // UTC +00:00
+console.log(new Date().toUTCString());
 
 // IMPORTS FROM OTHER FILES
 const loginAuthRouter = require("./routes/loginAuth");
